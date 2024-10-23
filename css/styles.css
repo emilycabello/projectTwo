@@ -1,0 +1,450 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body {
+    min-height: 100vh;
+    width: 100%;
+    text-decoration: none;
+    font-weight:1000;
+}
+
+html {
+    background-color: lightblue; 
+    font-family: "oooh baby";
+    text-decoration: none;
+    
+}
+
+
+/*=======headings==========*/
+
+.container h1 {
+    color: #70e3e1;
+    font-size: 70px;
+    text-decoration: none;
+    text-shadow:1px 1px 10px rgb(9, 79, 122), 1px 1px 10px #0f4c5f;
+    font-weight: 1000;
+    
+}
+
+.container h3 {
+    color: #0ea9a9;
+    font-size: 50px;
+    text-decoration: none;
+    text-shadow:1px 1px 5px #145c5b, 1px 1px 5px #1c5f5e;
+    font-weight: 600;
+}
+
+
+/*=======container==========*/
+
+.container {
+    width: 1440px;
+    height: 812px;
+    padding-top: 10%;
+    background-color: #011F26;
+    text-align: center;
+    line-height: 800%;
+
+}
+
+
+/*=======more==========*/
+
+a {
+    color: inherit;
+}
+
+/*=======animations==========*/
+
+#fade {
+    animation-name: fade;
+    animation-delay: 0s;
+    animation-iteration-count: 1;
+    animation-duration: 4s;
+    animation-direction:forwards;
+    animation-fill-mode: forwards;
+    animation-play-state: running;
+    animation-timing-function: ease-in;
+}
+
+@keyframes fade {
+
+    from {
+        opacity:0
+    }
+    to{
+        opacity:1
+    }
+}
+
+#echo{
+    animation-name: echo;
+    animation-delay: 0s;
+    animation-fill-mode:forwards;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-in;
+    animation-direction: forwards;
+    animation-duration: 4s;
+    animation-play-state: running;
+    
+}
+
+@keyframes echo{
+    from {
+        margin-left: -3000px;
+        letter-spacing: 30px;
+    }
+    to {
+        margin-left: 0px;
+    }
+
+}
+
+
+
+
+#echo2{
+    animation-name: echo2;
+    animation-delay: 0s;
+    animation-fill-mode:forwards;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-in;
+    animation-direction: forwards;
+    animation-duration: 5s;
+    animation-play-state: running;
+    
+}
+
+@keyframes echo2{
+    from {
+        margin-left: -4000px;
+        letter-spacing: 30px;
+    }
+    to {
+        margin-left: 0px;
+    }
+
+}
+
+
+
+
+#main{
+    animation-name: main;
+    animation-delay: 0s;
+    animation-fill-mode:backwards;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-in;
+    animation-direction: backwards;
+    animation-duration: 3s;
+    
+}
+
+@keyframes main{
+    from {
+        margin-right: -1500px;
+        letter-spacing: 20px;
+    }
+    to {
+        margin-left: 0px;
+    }
+
+
+}
+
+#main2{
+animation-name: main2;
+animation-delay: 0s;
+animation-fill-mode:backwards;
+animation-iteration-count: 1;
+animation-timing-function: ease-in;
+animation-direction: backwards;
+animation-duration: 5s;
+
+}
+
+@keyframes main2{
+from {
+    margin-right: -3000px;
+    letter-spacing: 30px;
+}
+to {
+    margin-left: 0px;
+}
+
+}
+
+
+#mindswehad h3 {
+    color:pink;
+}
+
+#mindswehad :hover{
+    font-size: 300%;
+    transition-duration: 2s;
+}
+
+
+#mindswehad {
+    animation-name: mindswehad;
+    animation-delay: 0s;
+    animation-fill-mode:forwards;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-in;
+    animation-direction:normal;
+    animation-duration: 5s;
+    animation-play-state: running;
+   
+    
+}
+
+@keyframes mindswehad{
+    from {
+        transform: rotateX(1000deg);
+        margin-left: -4000px;
+        letter-spacing: 30px;
+    }
+    to {
+        transform: rotateX(0deg);
+        margin-left: 0px;
+    }
+
+}
+
+
+#moved h3{
+    color: pink;
+}
+
+#moved:hover {
+    animation-name: moved;
+    animation-delay: 0s;
+    animation-fill-mode:forwards;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in;
+    animation-direction:normal;
+    animation-duration: 0.4s;
+    animation-play-state: running;
+   
+    
+}
+
+@keyframes moved{
+    0% {
+        transform: rotateZ(30deg);
+     
+    }
+    25%{
+        transform:rotateZ(0deg);
+    }
+
+    50% {
+        transform: rotateZ(-30deg);
+    }
+
+    75%{
+        transform: rotateZ(0deg);
+    }
+
+    100%{
+        transform: rotateZ(30deg);
+     
+    }
+}
+
+
+
+#bounce h3  {
+    animation-name: bounce;
+    animation-delay: calc(200ms * var(--i));
+    animation-fill-mode:forwards;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in;
+    animation-direction:normal;
+    animation-duration: 3s;
+    animation-play-state: running;
+    color:pink;
+   
+}
+
+@keyframes bounce{
+    0%, 100% {
+    }
+    50%{
+       transform: translateY(-50px);
+
+    }
+
+}
+
+
+#want3{
+    animation-name: want3;
+    animation-delay: 0;
+    animation-fill-mode:forwards;
+    animation-iteration-count: infinite;
+    animation-timing-function:linear;
+    animation-direction:normal;
+    animation-duration: 5s;
+    animation-play-state: running;
+    position:relative;
+    padding-top: 10%;
+
+}
+
+@keyframes want3{
+    0%{
+        left: 100%;
+    }
+    100%{
+        left: -100%;
+    }
+}
+
+
+
+/*=======more==========*/
+
+#drop {
+    color:pink;
+    animation-name: drop;
+    animation-delay: 0;
+    animation-fill-mode:forwards;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-in;
+    animation-direction:normal;
+    animation-duration: 3s;
+    animation-play-state: running;
+    position:relative;
+}
+ 
+@keyframes drop{
+    from{
+        position:relative;
+        top:0
+
+    }
+    to{
+        top: 400px;
+    }
+}
+
+
+#urthe{
+    position:absolute;
+    top: 200px;
+    left: 380px;
+}
+
+
+#friend{
+    position:absolute;
+    top: 200px;
+    left: 810px;
+}
+
+#only{
+    position:absolute;
+    top:200px;
+    left: 670px;
+    color: pink;
+}
+
+#only:hover{
+transform: scale(1.3);
+transition:2s;
+}
+
+
+
+
+#sharing{
+    position: absolute;
+    top:400px;
+    left: 200px;
+    color:pink;
+}
+
+
+#sharing:hover{
+    transform: scale(1.3);
+    transition:2s;
+    }
+
+#butthat{
+    position:absolute;
+    top:400px;
+    left: 400px;
+}
+
+
+
+
+
+
+#butthat{
+    animation-name: meow;
+    animation-delay: 0s;
+    animation-fill-mode:forwards;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-in;
+    animation-direction: normal;
+    animation-duration: 3s;
+    position:absolute;
+    top: 300px;
+
+}
+
+@keyframes meow{
+    0% {
+        
+        letter-spacing: 20px;
+    }
+    100% {
+        bottom: 0px;
+    }
+}
+
+
+#enough{
+    color:pink;
+    position:absolute;
+    top:500px;
+    left:600px;
+    
+}
+
+#enough:hover{
+    animation-name: enough;
+    animation-delay: 0s;
+    animation-fill-mode:forwards;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-in;
+    animation-direction: normal;
+    animation-duration: 3s;
+    position:absolute;
+
+
+}
+
+@keyframes enough{
+   from{
+   }
+        
+   to{
+    transform:rotateX(360deg) scale(2);
+}
+    
+}
+
+
+#start {
+    position:absolute;
+    top: 600px;
+    left:620px;
+}
